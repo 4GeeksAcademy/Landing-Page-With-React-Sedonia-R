@@ -6,8 +6,14 @@ import ReactDOM from "react-dom/client";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import {Navbar, Header, Cards, Footer} from "./component/home.jsx";
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+ReactDOM.createRoot(document.getElementById('navBar')).render(<Navbar/>);
+ReactDOM.createRoot(document.getElementById('header')).render(<Header/>);
+ReactDOM.createRoot(document.getElementsById('cards')).render(<Cards/>);
+ReactDOM.createRoot(document.getElementsById('footer')).render(<Footer/>);
 
+// const commentDomNode = document.getElementById('comments');
+// const commentRoot = createRoot(commentDomNode); 
+// commentRoot.render(<Comments />);
