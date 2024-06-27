@@ -7,8 +7,12 @@ body{
     padding:0 !important;
 }
 
-#navBar {
+.navBar {
     padding: 0;
+}
+
+.header {
+    background-color: lightgray;
 }
 
 .fw-light {
@@ -16,14 +20,21 @@ body{
     font-weight: bolder;
 }
 
-.cards-holder {
-    height: 400px;
-    justify-content:center;
-    padding: 0;
-    margin: 0;
+.cardContainer {
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.singleCard {
-    width: 25%;
-    border: 1px solid black;
+.card {
+    margin: 5px;
+}
+
+.card-footer {
+    width: 100%;
+    position: fixed;
+    bottom:0px;
+    height: 5%;
+    color: white;
+    text-align: center;
+    padding-top:8px;
 }
